@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n.bg-gray{\n    background-color: blue;\n}"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\n.bg-gray{\r\n    background-color: blue;\r\n}"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kesavan/Documents/njs/JumpStar/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\ACHCHUTHAN\Documents\AngularJSApp\src\styles.css */"./src/styles.css");
 
 
 /***/ })

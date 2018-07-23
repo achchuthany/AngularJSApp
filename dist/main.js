@@ -68,12 +68,12 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var app_routes = [
-    { path: '', pathMatch: 'full', redirectTo: '/customers' },
-    { path: 'customers/:id', loadChildren: 'app/customer/customer.module#CustomerModule' },
-    { path: 'customers', loadChildren: 'app/customers/customers.module#CustomersModule' },
-    { path: 'orders', loadChildren: 'app/orders/orders.module#OrdersModule' },
+    { path: '', pathMatch: 'full', redirectTo: '/waterTanks' },
+    { path: 'waterTanks/:id', loadChildren: 'app/customer/customer.module#CustomerModule' },
+    { path: 'waterTanks', loadChildren: 'app/customers/customers.module#CustomersModule' },
+    { path: 'waterLevel', loadChildren: 'app/orders/orders.module#OrdersModule' },
     { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
-    { path: '**', pathMatch: 'full', redirectTo: '/customers' } // catch any unfound routes and redirect to home page
+    { path: '**', pathMatch: 'full', redirectTo: '/waterTanks' } // catch any unfound routes and redirect to home page
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -98,7 +98,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main class=\"container\">\n    <cm-navbar></cm-navbar>\n    <router-outlet></router-outlet>\n    <cm-growler position=\"top-right\" timeout=\"2000\"></cm-growler>\n    <cm-modal></cm-modal>\n    <cm-overlay delay=\"300\">\n        <span class=\"spinner\"></span>&nbsp;&nbsp;&nbsp;Loading\n    </cm-overlay>\n</main>\n<br /><br />"
+module.exports = "<main class=\"container\">\r\n    <cm-navbar></cm-navbar>\r\n    <router-outlet></router-outlet>\r\n    <cm-growler position=\"top-right\" timeout=\"2000\"></cm-growler>\r\n    <cm-modal></cm-modal>\r\n    <cm-overlay delay=\"300\">\r\n        <span class=\"spinner\"></span>&nbsp;&nbsp;&nbsp;Loading\r\n    </cm-overlay>\r\n</main>\r\n<br /><br />"
 
 /***/ }),
 
@@ -315,7 +315,7 @@ var EnsureModuleLoadedOnceGuard = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    .growler {\n      position: fixed;\n      z-index: 999999;\n    }\n    \n    .growler.close-button:focus {\n      outline: 0;\n    }\n    \n    .growler.top-left {\n      top: 12px;\n      left: 12px;\n    }\n    \n    .growler.top-right {\n      top: 12px;\n      right: 12px;\n    }\n    \n    .growler.bottom-right {\n      bottom: 12px;\n      right: 12px;\n    }\n    \n    .growler.bottom-left {\n      bottom: 12px;\n      left: 12px;\n    }\n    \n    .growler.top-center {\n      top: 12px;\n      left: 50%;\n      -webkit-transform: translate(-50%, 0%);\n              transform: translate(-50%, 0%);\n    }\n    \n    .growler.bottom-center {\n      bottom: 12px;\n      left: 50%;\n      -webkit-transform: translate(-50%, 0%);\n              transform: translate(-50%, 0%);\n    }\n    \n    .growl {\n      cursor: pointer;\n      padding: 5;\n      width: 285px;\n      height: 65px; \n      opacity: 0;      \n      display: flex;\n      align-items: center;\n      justify-content: center;\n      transition: opacity 1s;        \n    }\n    \n    .growl.active {        \n      opacity: 1;\n    }\n    \n    .growl-message {\n\n    }"
+module.exports = "    .growler {\r\n      position: fixed;\r\n      z-index: 999999;\r\n    }\r\n    \r\n    .growler.close-button:focus {\r\n      outline: 0;\r\n    }\r\n    \r\n    .growler.top-left {\r\n      top: 12px;\r\n      left: 12px;\r\n    }\r\n    \r\n    .growler.top-right {\r\n      top: 12px;\r\n      right: 12px;\r\n    }\r\n    \r\n    .growler.bottom-right {\r\n      bottom: 12px;\r\n      right: 12px;\r\n    }\r\n    \r\n    .growler.bottom-left {\r\n      bottom: 12px;\r\n      left: 12px;\r\n    }\r\n    \r\n    .growler.top-center {\r\n      top: 12px;\r\n      left: 50%;\r\n      -webkit-transform: translate(-50%, 0%);\r\n              transform: translate(-50%, 0%);\r\n    }\r\n    \r\n    .growler.bottom-center {\r\n      bottom: 12px;\r\n      left: 50%;\r\n      -webkit-transform: translate(-50%, 0%);\r\n              transform: translate(-50%, 0%);\r\n    }\r\n    \r\n    .growl {\r\n      cursor: pointer;\r\n      padding: 5;\r\n      width: 285px;\r\n      height: 65px; \r\n      opacity: 0;      \r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      transition: opacity 1s;        \r\n    }\r\n    \r\n    .growl.active {        \r\n      opacity: 1;\r\n    }\r\n    \r\n    .growl-message {\r\n\r\n    }"
 
 /***/ }),
 
@@ -591,7 +591,7 @@ var AuthInterceptor = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".modal {\n  background: rgba(0,0,0,0.6);\n}"
+module.exports = ".modal {\r\n  background: rgba(0,0,0,0.6);\r\n}"
 
 /***/ }),
 
@@ -602,7 +602,7 @@ module.exports = ".modal {\n  background: rgba(0,0,0,0.6);\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal fade\" tabindex=\"-1\" [ngClass]=\"{'in': modalVisibleAnimate}\"\n    [ngStyle]=\"{'display': modalVisible ? 'block' : 'none', 'opacity': modalVisibleAnimate ? 1 : 0}\">\n    <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" (click)=\"cancel()\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                <h4 class=\"modal-title\">{{ modalContent.header }}</h4>\n            </div>\n            <div class=\"modal-body\">\n                {{ modalContent.body }}\n            </div>\n            <div class=\"modal-footer\">\n                <button type=\"button\" class=\"btn btn-default\" (click)=\"cancel()\" *ngIf=\"modalContent.cancelButtonVisible\">{{ modalContent.cancelButtonText }}</button>\n                <button type=\"button\" class=\"btn btn-primary\" (click)=\"ok()\">{{ modalContent.OKButtonText }}</button>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"modal fade\" tabindex=\"-1\" [ngClass]=\"{'in': modalVisibleAnimate}\"\r\n    [ngStyle]=\"{'display': modalVisible ? 'block' : 'none', 'opacity': modalVisibleAnimate ? 1 : 0}\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" (click)=\"cancel()\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\r\n                <h4 class=\"modal-title\">{{ modalContent.header }}</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{ modalContent.body }}\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" (click)=\"cancel()\" *ngIf=\"modalContent.cancelButtonVisible\">{{ modalContent.cancelButtonText }}</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" (click)=\"ok()\">{{ modalContent.OKButtonText }}</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -791,7 +791,7 @@ var ModalService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inner navbar-fixed-top\">\n    <div class=\"container\">\n        <div class=\"navbar-header\" style=\"\">\n            <button type=\"button\" class=\"navbar-toggle\" \n                    (click)=\"isCollapsed = !isCollapsed\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" routerLink=\"/customers\">\n                <img src=\"assets/images/logo.png\" alt=\"logo\" height=\"50px\"/>\n                <span class=\"app-title\"> WATER TANK MANAGEMENT</span>\n            </a>\n            <span class=\"navbar-collapse\" [attr.data-collapse]=\"isCollapsed\">\n                <ul class=\"nav navbar-nav nav-pills navBarPadding\">\n                    <li routerLinkActive=\"active\"><a routerLink=\"/customers\">Water Tank</a></li>\n                    <li routerLinkActive=\"active\"><a routerLink=\"/orders\">Water Level</a></li>\n                    <li routerLinkActive=\"active\"><a routerLink=\"/about\">About</a></li>\n                    <li routerLinkActive=\"active\" (click)=\"loginOrOut()\"><a>{{ loginLogoutText }}</a></li>\n                </ul>\n            </span>\n        </div>\n    </div>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-inner navbar-fixed-top\">\r\n    <div class=\"container\">\r\n        <div class=\"navbar-header\" style=\"\">\r\n            <button type=\"button\" class=\"navbar-toggle\" \r\n                    (click)=\"isCollapsed = !isCollapsed\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/waterTanks\">\r\n                <img src=\"assets/images/logo.png\" alt=\"logo\" height=\"50px\"/>\r\n                <span class=\"app-title\"> WATER TANK MANAGEMENT</span>\r\n            </a>\r\n            <span class=\"navbar-collapse\" [attr.data-collapse]=\"isCollapsed\">\r\n                <ul class=\"nav navbar-nav nav-pills navBarPadding\">\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterTanks \">Water Tank</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterLevel\">Water Level</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/about\">About</a></li>\r\n                    <li routerLinkActive=\"active\" (click)=\"loginOrOut()\"><a>{{ loginLogoutText }}</a></li>\r\n                </ul>\r\n            </span>\r\n        </div>\r\n    </div>\r\n</nav>"
 
 /***/ }),
 
@@ -953,7 +953,7 @@ var OverlayRequestResponseInterceptor = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".overlay {\n  display:none;\n}\n\n.overlay.active {        \n  display: block;\n}\n\n.overlay-background {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1050;\n  display: block;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  outline: 0;\n  background-color:rgba(0,0,0,0.6);\n}\n\n.overlay-content {\n\n}\n\n.overlay-content {\n  position: fixed;\n  z-index: 999999;\n  top: 50%;\n  left: 50%;\n  background-color: white;\n  border: 1px solid rgb(94, 94, 94);\n  -webkit-transform: translate(-50%, 0%);\n          transform: translate(-50%, 0%);\n\n  cursor: pointer;\n  padding: 5;\n  width: 285px;\n  height: 100px;    \n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: opacity 1s;        \n} \n"
+module.exports = ".overlay {\r\n  display:none;\r\n}\r\n\r\n.overlay.active {        \r\n  display: block;\r\n}\r\n\r\n.overlay-background {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1050;\r\n  display: block;\r\n  overflow: hidden;\r\n  -webkit-overflow-scrolling: touch;\r\n  outline: 0;\r\n  background-color:rgba(0,0,0,0.6);\r\n}\r\n\r\n.overlay-content {\r\n\r\n}\r\n\r\n.overlay-content {\r\n  position: fixed;\r\n  z-index: 999999;\r\n  top: 50%;\r\n  left: 50%;\r\n  background-color: white;\r\n  border: 1px solid rgb(94, 94, 94);\r\n  -webkit-transform: translate(-50%, 0%);\r\n          transform: translate(-50%, 0%);\r\n\r\n  cursor: pointer;\r\n  padding: 5;\r\n  width: 285px;\r\n  height: 100px;    \r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: opacity 1s;        \r\n} \r\n"
 
 /***/ }),
 
@@ -964,7 +964,7 @@ module.exports = ".overlay {\n  display:none;\n}\n\n.overlay.active {        \n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"overlay\" [class.active]=\"enabled\">\n    <div class=\"overlay-background\"></div>\n    <div class=\"overlay-content\">\n        <ng-content></ng-content>\n    </div>\n</div>"
+module.exports = "<div class=\"overlay\" [class.active]=\"enabled\">\r\n    <div class=\"overlay-background\"></div>\r\n    <div class=\"overlay-content\">\r\n        <ng-content></ng-content>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1773,7 +1773,7 @@ var LoginRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".login-form input[type='text'], \n.login-form input[type='email'],\n.login-form input[type='password'] {\n    width:75%;\n}\n\n.login-form .ng-invalid {\n  border-left: 5px solid #a94442;\n}\n\n.login-form .ng-valid {\n  border-left: 5px solid #42A948;\n}\n"
+module.exports = ".login-form input[type='text'], \r\n.login-form input[type='email'],\r\n.login-form input[type='password'] {\r\n    width:75%;\r\n}\r\n\r\n.login-form .ng-invalid {\r\n  border-left: 5px solid #a94442;\r\n}\r\n\r\n.login-form .ng-valid {\r\n  border-left: 5px solid #42A948;\r\n}\r\n"
 
 /***/ }),
 
@@ -1784,7 +1784,7 @@ module.exports = ".login-form input[type='text'], \n.login-form input[type='emai
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"view\">\n    <div class=\"container\">\n        <header>\n            <h3><span class=\"glyphicon glyphicon-lock\"></span> Login</h3>\n        </header>\n        <br />\n        <form [formGroup]=\"loginForm\" (ngSubmit)=\"submit(loginForm)\" class=\"login-form\" novalidate>\n            <div class=\"login\">\n                <div class=\"row\">\n                    <div class=\"col-md-2\">\n                        Email:\n                    </div>\n                    <div class=\"col-md-10\">\n                        <input type=\"email\" name=\"email\" class=\"form-control\" formControlName=\"email\" />\n                        <div class=\"alert alert-danger\" [hidden]=\"loginForm.controls.email.untouched || loginForm.controls.email.valid\">\n                            A valid email address is required\n                        </div>\n                    </div>\n                </div>\n                <br />\n                <div class=\"row\">\n                    <div class=\"col-md-2\">\n                        Password:\n                    </div>\n                    <div class=\"col-md-10\">\n                        <input type=\"password\" name=\"password\" class=\"form-control\" formControlName=\"password\" />\n                        <div class=\"alert alert-danger\" [hidden]=\"loginForm.controls.password.untouched || loginForm.controls.password.valid\">\n                            Password is required (6 or more characters with at least one number)\n                        </div>\n                    </div>\n                </div>\n                <br />\n                <div class=\"row\">\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!loginForm.valid\">Login</button>\n                    </div>\n                </div>\n                <br />\n                <div class=\"statusRow\">\n                    <br />\n                    <div class=\"label label-important\" *ngIf=\"errorMessage\">\n                        <span class=\"glyphicon glyphicon-thumbs-down icon-white\"></span>&nbsp;&nbsp;Error: {{ errorMessage }}\n                    </div>\n                </div>\n            </div>\n        </form>\n        \n    </div>\n</div>"
+module.exports = "<div class=\"view\">\r\n    <div class=\"container\">\r\n        <header>\r\n            <h3><span class=\"glyphicon glyphicon-lock\"></span> Login</h3>\r\n        </header>\r\n        <br />\r\n        <form [formGroup]=\"loginForm\" (ngSubmit)=\"submit(loginForm)\" class=\"login-form\" novalidate>\r\n            <div class=\"login\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-2\">\r\n                        Email:\r\n                    </div>\r\n                    <div class=\"col-md-10\">\r\n                        <input type=\"email\" name=\"email\" class=\"form-control\" formControlName=\"email\" />\r\n                        <div class=\"alert alert-danger\" [hidden]=\"loginForm.controls.email.untouched || loginForm.controls.email.valid\">\r\n                            A valid email address is required\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <br />\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-2\">\r\n                        Password:\r\n                    </div>\r\n                    <div class=\"col-md-10\">\r\n                        <input type=\"password\" name=\"password\" class=\"form-control\" formControlName=\"password\" />\r\n                        <div class=\"alert alert-danger\" [hidden]=\"loginForm.controls.password.untouched || loginForm.controls.password.valid\">\r\n                            Password is required (6 or more characters with at least one number)\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <br />\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12\">\r\n                        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!loginForm.valid\">Login</button>\r\n                    </div>\r\n                </div>\r\n                <br />\r\n                <div class=\"statusRow\">\r\n                    <br />\r\n                    <div class=\"label label-important\" *ngIf=\"errorMessage\">\r\n                        <span class=\"glyphicon glyphicon-thumbs-down icon-white\"></span>&nbsp;&nbsp;Error: {{ errorMessage }}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </form>\r\n        \r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1991,7 +1991,7 @@ var SortByDirective = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "cm-filter-textbox {\n    margin-top: 5px;\n}\n"
+module.exports = "cm-filter-textbox {\r\n    margin-top: 5px;\r\n}\r\n"
 
 /***/ }),
 
@@ -2002,7 +2002,7 @@ module.exports = "cm-filter-textbox {\n    margin-top: 5px;\n}\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form>\n        Filter:\n        <input type=\"text\" name=\"filter\"\n            [(ngModel)]=\"model.filter\" \n            (keyup)=\"filterChanged($event)\"  />\n</form>"
+module.exports = "<form>\r\n        Filter:\r\n        <input type=\"text\" name=\"filter\"\r\n            [(ngModel)]=\"model.filter\" \r\n            (keyup)=\"filterChanged($event)\"  />\r\n</form>"
 
 /***/ }),
 
@@ -2427,7 +2427,7 @@ var MapPointComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pagination>.active>a, \n.pagination>.active>a:focus, \n.pagination>.active>a:hover, \n.pagination>.active>span, \n.pagination>.active>span:focus, \n.pagination>.active>span:hover {\n  background-color: #027FF4;\n  border-color: #027FF4;\n}\n\n.pagination a {\n    cursor: pointer;\n}"
+module.exports = ".pagination>.active>a, \r\n.pagination>.active>a:focus, \r\n.pagination>.active>a:hover, \r\n.pagination>.active>span, \r\n.pagination>.active>span:focus, \r\n.pagination>.active>span:hover {\r\n  background-color: #027FF4;\r\n  border-color: #027FF4;\r\n}\r\n\r\n.pagination a {\r\n    cursor: pointer;\r\n}"
 
 /***/ }),
 
@@ -2438,7 +2438,7 @@ module.exports = ".pagination>.active>a, \n.pagination>.active>a:focus, \n.pagin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav [hidden]=\"!isVisible\">\n  <ul class=\"pagination\">\n    <li [class.disabled]=\"!previousEnabled\" (click)=\"previousNext(-1, $event)\">\n      <a aria-label=\"Previous\">\n        <span aria-hidden=\"true\">&laquo;</span>\n      </a>\n    </li>\n    <li *ngFor=\"let page of pages\" (click)=\"changePage(page, $event)\" [class.active]=\"currentPage === page\">\n      <a>{{ page }}</a>\n    </li>\n    <li [class.disabled]=\"!nextEnabled\" (click)=\"previousNext(1, $event)\">\n      <a aria-label=\"Next\">\n        <span aria-hidden=\"true\">&raquo;</span>\n      </a>\n    </li>\n  </ul>\n</nav>"
+module.exports = "<nav [hidden]=\"!isVisible\">\r\n  <ul class=\"pagination\">\r\n    <li [class.disabled]=\"!previousEnabled\" (click)=\"previousNext(-1, $event)\">\r\n      <a aria-label=\"Previous\">\r\n        <span aria-hidden=\"true\">&laquo;</span>\r\n      </a>\r\n    </li>\r\n    <li *ngFor=\"let page of pages\" (click)=\"changePage(page, $event)\" [class.active]=\"currentPage === page\">\r\n      <a>{{ page }}</a>\r\n    </li>\r\n    <li [class.disabled]=\"!nextEnabled\" (click)=\"previousNext(1, $event)\">\r\n      <a aria-label=\"Next\">\r\n        <span aria-hidden=\"true\">&raquo;</span>\r\n      </a>\r\n    </li>\r\n  </ul>\r\n</nav>"
 
 /***/ }),
 
@@ -2780,7 +2780,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kesavan/Documents/njs/JumpStar/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\ACHCHUTHAN\Documents\AngularJSApp\src\main.ts */"./src/main.ts");
 
 
 /***/ })
