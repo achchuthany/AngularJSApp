@@ -2,301 +2,151 @@
   {
     "_id": "56f861a8a38a3d28e63b6c6b",
     "id": 1,
-    "name": "Alabama",
-    "abbreviation": "AL"
+    "name": "Ampara",
+    "abbreviation": "APR"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c6d",
-    "id": 3,
-    "name": "Alaska",
-    "abbreviation": "AK"
+    "id": 2,
+    "name": "Anuradhapura",
+    "abbreviation": "AD"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c6f",
-    "id": 5,
-    "name": "Arizona",
-    "abbreviation": "AZ"
+    "id": 3,
+    "name": "Batticaloa",
+    "abbreviation": "BD"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c71",
-    "id": 7,
-    "name": "Arkansas",
-    "abbreviation": "AR"
+    "id": 4,
+    "name": "Badulla",
+    "abbreviation": "BC"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c73",
-    "id": 9,
-    "name": "California",
-    "abbreviation": "CA"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c75",
-    "id": 11,
-    "name": "Colorado",
+    "id": 5,
+    "name": "Colombo",
     "abbreviation": "CO"
   },
   {
+    "_id": "56f861a8a38a3d28e63b6c75",
+    "id": 6,
+    "name": "Galle",
+    "abbreviation": "GL"
+  },
+  {
     "_id": "56f861a8a38a3d28e63b6c77",
-    "id": 13,
-    "name": "Connecticut",
-    "abbreviation": "CT"
+    "id": 7,
+    "name": "Gampaha",
+    "abbreviation": "GQ"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c79",
-    "id": 15,
-    "name": "Delaware",
-    "abbreviation": "DE"
+    "id": 8,
+    "name": "Hambantota",
+    "abbreviation": "HB"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c7b",
-    "id": 17,
-    "name": "Florida",
-    "abbreviation": "FL"
+    "id": 9,
+    "name": "Jaffna",
+    "abbreviation": "JA"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c7d",
-    "id": 19,
-    "name": "Georgia",
-    "abbreviation": "GA"
+    "id": 10,
+    "name": "Kalutara",
+    "abbreviation": "KT"
   },
   {
     "_id": "56f861a8a38a3d28e63b6c7f",
-    "id": 21,
-    "name": "Hawaii",
-    "abbreviation": "HI"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c81",
-    "id": 23,
-    "name": "Idaho",
-    "abbreviation": "ID"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c83",
-    "id": 25,
-    "name": "Illinois",
-    "abbreviation": "IL"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c85",
-    "id": 27,
-    "name": "Indiana",
-    "abbreviation": "IN"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c87",
-    "id": 29,
-    "name": "Iowa",
-    "abbreviation": "IA"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c89",
-    "id": 31,
-    "name": "Kansas",
-    "abbreviation": "KS"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c8b",
-    "id": 33,
-    "name": "Kentucky",
+    "id": 11,
+    "name": "Kandy",
     "abbreviation": "KY"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c8d",
-    "id": 35,
-    "name": "Louisiana",
-    "abbreviation": "LA"
+    "_id": "56f861a8a38a3d28e63b6c81",
+    "id": 12,
+    "name": "Kegalle",
+    "abbreviation": "KE"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c8f",
-    "id": 37,
-    "name": "Maine",
-    "abbreviation": "ME"
+    "_id": "56f861a8a38a3d28e63b6c83",
+    "id": 13,
+    "name": "Kilinochchi",
+    "abbreviation": "KL"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c91",
-    "id": 39,
-    "name": "Maryland",
-    "abbreviation": "MD"
+    "_id": "56f861a8a38a3d28e63b6c85",
+    "id": 14,
+    "name": "Kurunegala",
+    "abbreviation": "KG"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c93",
-    "id": 41,
-    "name": "Massachusetts",
-    "abbreviation": "MA"
+    "_id": "56f861a8a38a3d28e63b6c87",
+    "id": 15,
+    "name": "Mannar",
+    "abbreviation": "MB"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c95",
-    "id": 43,
-    "name": "Michigan",
-    "abbreviation": "MI"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c97",
-    "id": 45,
-    "name": "Minnesota",
-    "abbreviation": "MN"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c99",
-    "id": 47,
-    "name": "Mississippi",
-    "abbreviation": "MS"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c9b",
-    "id": 49,
-    "name": "Missouri",
-    "abbreviation": "MO"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c6c",
-    "id": 2,
-    "name": "Montana",
+    "_id": "56f861a8a38a3d28e63b6c89",
+    "id": 16,
+    "name": "Matara",
     "abbreviation": "MT"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c6e",
-    "id": 4,
-    "name": "Nebraska",
-    "abbreviation": "NE"
+    "_id": "56f861a8a38a3d28e63b6c8b",
+    "id": 17,
+    "name": "Matale",
+    "abbreviation": "MH"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c70",
-    "id": 6,
-    "name": "Nevada",
-    "abbreviation": "NV"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c72",
-    "id": 8,
-    "name": "New Hampshire",
-    "abbreviation": "NH"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c74",
-    "id": 10,
-    "name": "New Jersey",
-    "abbreviation": "NJ"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c76",
-    "id": 12,
-    "name": "New Mexico",
-    "abbreviation": "NM"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c78",
-    "id": 14,
-    "name": "New York",
-    "abbreviation": "NY"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c7a",
-    "id": 16,
-    "name": "North Carolina",
-    "abbreviation": "NC"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c7c",
+    "_id": "56f861a8a38a3d28e63b6c8d",
     "id": 18,
-    "name": "North Dakota",
-    "abbreviation": "ND"
+    "name": "Monaragala",
+    "abbreviation": "MJ"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c7e",
+    "_id": "56f861a8a38a3d28e63b6c8f",
+    "id": 19,
+    "name": "Mullaitivu",
+    "abbreviation": "MP"
+  },
+  {
+    "_id": "56f861a8a38a3d28e63b6c91",
     "id": 20,
-    "name": "Ohio",
-    "abbreviation": "OH"
+    "name": "Nuwara Eliya",
+    "abbreviation": "NW"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c80",
+    "_id": "56f861a8a38a3d28e63b6c93",
+    "id": 21,
+    "name": "Polonnaruwa",
+    "abbreviation": "PR"
+  },
+  {
+    "_id": "56f861a8a38a3d28e63b6c95",
     "id": 22,
-    "name": "Oklahoma",
-    "abbreviation": "OK"
+    "name": "Puttalam",
+    "abbreviation": "PX"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c82",
+    "_id": "56f861a8a38a3d28e63b6c97",
+    "id": 23,
+    "name": "Ratnapura",
+    "abbreviation": "RN"
+  },
+  {
+    "_id": "56f861a8a38a3d28e63b6c99",
     "id": 24,
-    "name": "Oregon",
-    "abbreviation": "OR"
+    "name": "Trincomalee",
+    "abbreviation": "TC"
   },
   {
-    "_id": "56f861a8a38a3d28e63b6c84",
-    "id": 26,
-    "name": "Pennsylvania",
-    "abbreviation": "PA"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c86",
-    "id": 28,
-    "name": "Rhode Island",
-    "abbreviation": "RI"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c88",
-    "id": 30,
-    "name": "South Carolina",
-    "abbreviation": "SC"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c8a",
-    "id": 32,
-    "name": "South Dakota",
-    "abbreviation": "SD"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c8c",
-    "id": 34,
-    "name": "Tennessee",
-    "abbreviation": "TN"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c8e",
-    "id": 36,
-    "name": "Texas",
-    "abbreviation": "TX"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c90",
-    "id": 38,
-    "name": "Utah",
-    "abbreviation": "UT"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c92",
-    "id": 40,
-    "name": "Vermont",
-    "abbreviation": "VT"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c94",
-    "id": 42,
-    "name": "Virginia",
+    "_id": "56f861a8a38a3d28e63b6c9b",
+    "id": 25,
+    "name": "Vavuniya",
     "abbreviation": "VA"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c96",
-    "id": 44,
-    "name": "Washington",
-    "abbreviation": "WA"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c98",
-    "id": 46,
-    "name": "West Virginia",
-    "abbreviation": "WV"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c9a",
-    "id": 48,
-    "name": "Wisconsin",
-    "abbreviation": "WI"
-  },
-  {
-    "_id": "56f861a8a38a3d28e63b6c9c",
-    "id": 50,
-    "name": "Wyoming",
-    "abbreviation": "WY"
   }
 ]
