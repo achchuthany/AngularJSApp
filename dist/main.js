@@ -791,7 +791,7 @@ var ModalService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inner navbar-fixed-top\">\r\n    <div class=\"container\">\r\n        <div class=\"navbar-header\" style=\"\">\r\n            <button type=\"button\" class=\"navbar-toggle\" \r\n                    (click)=\"isCollapsed = !isCollapsed\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/waterTanks\">\r\n                <img src=\"assets/images/logo.png\" alt=\"logo\" height=\"50px\"/>\r\n                <span class=\"app-title\"> WATER TANK MANAGEMENT</span>\r\n            </a>\r\n            <span class=\"navbar-collapse\" [attr.data-collapse]=\"isCollapsed\">\r\n                <ul class=\"nav navbar-nav nav-pills navBarPadding\">\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterTanks \">Water Tank</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterLevel\">Water Level</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/about\">About</a></li>\r\n                    <li routerLinkActive=\"active\" (click)=\"loginOrOut()\"><a>{{ loginLogoutText }}</a></li>\r\n                </ul>\r\n            </span>\r\n        </div>\r\n    </div>\r\n</nav>"
+module.exports = "<nav class=\"navbar navbar-inner navbar-fixed-top\">\r\n    <div class=\"container\">\r\n        <div class=\"navbar-header\" >\r\n            <button type=\"button\" class=\"navbar-toggle\" \r\n                    (click)=\"isCollapsed = !isCollapsed\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/waterTanks\">\r\n                <img src=\"assets/images/logo.png\" alt=\"logo\" height=\"50px\"/>\r\n                <span class=\"app-title\"> WATER TANK MANAGEMENT</span>\r\n            </a>\r\n            <span class=\"navbar-collapse\" [attr.data-collapse]=\"isCollapsed\">\r\n                <ul class=\"nav navbar-nav nav-pills navBarPadding\">\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterTanks \">Water Tank</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/waterLevel\">Water Level</a></li>\r\n                    <li routerLinkActive=\"active\"><a routerLink=\"/about\">About</a></li>\r\n                    <li routerLinkActive=\"active\" (click)=\"loginOrOut()\"><a>{{ loginLogoutText }}</a></li>\r\n                </ul>\r\n            </span>\r\n        </div>\r\n    </div>\r\n</nav>"
 
 /***/ }),
 
@@ -2135,8 +2135,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var MapComponent = /** @class */ (function () {
     function MapComponent() {
         this.markers = [];
-        this.latitude = 34.5133;
-        this.longitude = -94.1629;
+        this.latitude = 8.4068894;
+        this.longitude = 81.4444072;
         this.markerText = 'Your Location';
         this.zoom = 8;
     }
