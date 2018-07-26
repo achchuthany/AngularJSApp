@@ -2,7 +2,7 @@
     <div class="row card-container">
         <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let customer of customers;trackBy:trackbyService.customer">
             <div class="card">
-                <div class="card-header" style="background-color:rgb(227, 110, 95);">
+                <div class="card-header" style="background-color:rgb(0, 141, 219);">
                     <a [routerLink]="['/waterTanks',customer.id,'details']" class="white">
                         {{customer.firstName | capitalize }} 
                     </a>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-header" style="background-color:#9c9a9a;font-size: 14px;">
+                <div class="card-header" style="background-color:#222222;font-size: 14px;">
                     <a class="white">
                         {{customer.orderTotal | capitalize }}  m<sup>3</sup>
                     </a>

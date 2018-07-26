@@ -27,8 +27,8 @@ export class MapComponent implements OnInit, AfterContentInit {
 
   @Input() height: number;
   @Input() width: number;
-  @Input() latitude = 34.5133;
-  @Input() longitude = -94.1629;
+  @Input() latitude = 8.4068894;
+  @Input() longitude = 81.4444072;
   @Input() markerText = 'Your Location';
   @Input() zoom = 8;
 
